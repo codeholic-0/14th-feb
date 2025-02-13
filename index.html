@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Profile - Debankan Roy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a0f1a;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: #2a1a2a;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid #e091e0;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: right;
+            margin: 20px;
+            border: 3px solid #ff69b4;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+        .profile-section {
+            background-color: #3a2a3a;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            border: 1px solid #e091e0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .profile-section:hover {
+            background-color: #4a3a4a;
+        }
+        h1, h3 {
+            color: #ff69b4;
+            margin-bottom: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 8px 0;
+            color: #f0e0f0;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        li:hover {
+            color: #ff69b4;
+        }
+        p {
+            color: #f0e0f0;
+            line-height: 1.6;
+        }
+        strong {
+            color: #e091e0;
+        }
+        .hidden {
+            display: none;
+        }
+        .expanded {
+            max-height: 500px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .collapsed {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="profile.jpg" alt="Debankan Roy" class="profile-image" id="profileImage">
+            <h1>Dating Profile</h1>
+        </div>
+        
+        <div class="profile-section" data-section="personal">
+            <h3>Personal Information 📝</h3>
+            <div class="section-content">
+                <p><strong>Name:</strong> Debankan Roy 👋</p>
+                <p><strong>Age:</strong> 18 </p>
+                <p><strong>Education:</strong> Student at IIIT Ranchi 🎓</p>
+            </div>
+        </div>
+
+        <div class="profile-section" data-section="professional">
+            <h3>Professional Qualities 💪</h3>
+            <div class="section-content">
+                <ul>
+                    <li>Culinary Expertise - Can Make Edible Food 🍳</li>
+                    <li>Technical Skills - Snake Games in python 🐍</li>
+                    <li>Athletic Background - Tries to play Volleyball 🏐</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="profile-section" data-section="interests">
+            <h3>Interests 🎯</h3>
+            <div class="section-content">
+                <ul>
+                    <li>Strategic Gaming - Casual chess player ♟️</li>
+                    <li>Team Sports - volleyball player 🏐</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="profile-section" data-section="intro">
+            <h3>Introduction 👋</h3>
+            <div class="section-content">
+                <p>Hi! I'm a student who loves technology 💻 and enjoys staying active. I like spending time coding 👨‍💻, playing chess ♟️, and getting involved in team sports 🏐. I'm looking to meet someone who shares similar interests and enjoys good conversations! 💭</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
